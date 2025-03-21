@@ -30,7 +30,7 @@ export function Navbar() {
               <div className="h-3 w-3 rounded-full bg-gradient-to-br from-green-400 to-green-600"></div>
             </div>
           </div>
-          <span className="font-bold text-xl">DocCrypts</span>
+          <span className="font-bold text-xl">Vaultify</span>
         </Link>
         <nav className="hidden md:flex items-center justify-center flex-1 space-x-6 text-sm font-medium">
           <Link href="#features" className="transition-colors hover:text-primary">

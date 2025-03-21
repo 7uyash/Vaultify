@@ -14,7 +14,7 @@ export function Footer() {
                   <div className="h-3 w-3 rounded-full bg-gradient-to-br from-green-400 to-green-600"></div>
                 </div>
               </div>
-              <span className="font-bold text-xl">DocCrypts</span>
+              <span className="font-bold text-xl">Vaultify</span>
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Secure, intelligent document management powered by blockchain and AI.
@@ -94,7 +94,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} DocCrypts. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© {new Date().getFullYear()} Vaultify. All rights reserved.</p>
         </div>
       </div>
     </footer>

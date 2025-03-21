@@ -37,7 +37,7 @@ export function HowItWorks() {
             <div className="inline-block rounded-lg bg-green-100 px-3 py-1 text-sm dark:bg-green-800">How It Works</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Secure Process</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              DocCrypts makes document management effortless with a streamlined workflow.
+              Vaultify makes document management effortless with a streamlined workflow.
             </p>
           </div>
         </div>
