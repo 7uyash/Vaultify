@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vaulitify - Secure, Smart Document Management",
   description: "Leverage AI and blockchain for unparalleled document security and intelligence.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
