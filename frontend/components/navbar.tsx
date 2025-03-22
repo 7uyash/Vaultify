@@ -25,12 +25,13 @@ export function Navbar() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-sky-400 to-sky-600">
-            <div className="absolute inset-1 rounded-full bg-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-gradient-to-br from-sky-400 to-sky-600"></div>
-            </div>
+          <div className="relative h-8 w-8 overflow-hidden rounded-full">
+          <img 
+              src="/nav logo.png" 
+              alt="Project Logo" 
+              className="h-8 w-8 rounded-full"/>
           </div>
-          <span className="font-bold text-xl">DocCrypts</span>
+          <span className="font-bold text-xl">Vaultify</span>
         </Link>
         <nav className="hidden md:flex items-center justify-center flex-1 space-x-8 text-sm font-medium">
           <Link href="#features" className="transition-colors hover:text-sky-600">

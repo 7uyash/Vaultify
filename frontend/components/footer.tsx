@@ -9,12 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-sky-400 to-sky-600">
-                <div className="absolute inset-1 rounded-full bg-white flex items-center justify-center">
-                  <div className="h-3 w-3 rounded-full bg-gradient-to-br from-sky-400 to-sky-600"></div>
-                </div>
+              <div className="relative h-8 w-8 overflow-hidden rounded-full">
+                <img 
+                  src="/nav logo.png" 
+                  alt="Project Logo" 
+                  className="h-8 w-8 rounded-full"/>
               </div>
-              <span className="font-bold text-xl">DocCrypts</span>
+              <span className="font-bold text-xl">Vaultify</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">
               Secure, intelligent document management powered by blockchain and AI.
@@ -64,7 +65,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-gray-500">
                 <Mail className="h-4 w-4 text-sky-500" />
-                <span>contact@doccrypts.com</span>
+                <span>contact@Vaultify.com</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-500">
                 <Phone className="h-4 w-4 text-sky-500" />
@@ -94,7 +95,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-sky-100 pt-8 text-center">
-          <p className="text-sm text-gray-500">© {new Date().getFullYear()} DocCrypts. All rights reserved.</p>
+          <p className="text-sm text-gray-500">© {new Date().getFullYear()} Vaultify. All rights reserved.</p>
         </div>
       </div>
     </footer>

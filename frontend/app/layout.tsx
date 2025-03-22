@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DocCrypts - Secure, Smart Document Management",
+  title: "Vaultify - Secure, Smart Document Management",
   description: "Leverage AI and blockchain for unparalleled document security and intelligence.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

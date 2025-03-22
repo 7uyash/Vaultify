@@ -38,7 +38,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="text-gradient">DocCrypts:</span> Secure, Smart Document Management
+            <span className="text-gradient">Vaultify:</span> Secure, Smart Document Management
           </h1>
           <p
             className="mt-6 text-lg leading-8 text-gray-600 animate-in fade-in slide-in-from-bottom-4 duration-700"
@@ -52,7 +52,7 @@ export function Hero() {
             style={{ animationDelay: "200ms" }}
           >
             <Button size="lg" className="rounded-full bg-sky-500 hover:bg-sky-600 text-white px-8">
-              Try DocCrypts Free
+              Try Vaultify Free
             </Button>
             <Link href="#features" className="flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700">
               Learn more <ChevronRight className="ml-1 h-4 w-4" />

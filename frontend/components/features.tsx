@@ -45,7 +45,7 @@ export function Features() {
               <span className="text-gradient">Powerful</span> Document Management
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              DocCrypts combines blockchain security with AI intelligence to revolutionize how you manage documents.
+              Vaultify combines blockchain security with AI intelligence to revolutionize how you manage documents.
             </p>
           </div>
         </div>

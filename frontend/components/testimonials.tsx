@@ -4,7 +4,7 @@ import { Quote } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "DocCrypts has transformed how our team manages sensitive documents. The AI features are incredibly useful.",
+    quote: "Vaultify has transformed how our team manages sensitive documents. The AI features are incredibly useful.",
     name: "Sarah Johnson",
     title: "CTO, TechInnovate",
     avatar: "/placeholder.svg?height=80&width=80",
@@ -19,7 +19,7 @@ const testimonials = [
     initials: "MC",
   },
   {
-    quote: "We've reduced document processing time by 60% since implementing DocCrypts across our organization.",
+    quote: "We've reduced document processing time by 60% since implementing Vaultify across our organization.",
     name: "Elena Rodriguez",
     title: "Operations Manager, GlobalFinance",
     avatar: "/placeholder.svg?height=80&width=80",
@@ -38,7 +38,7 @@ export function Testimonials() {
               Trusted by <span className="text-gradient">Professionals</span>
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              See what our users are saying about DocCrypts.
+              See what our users are saying about Vaultify.
             </p>
           </div>
         </div>

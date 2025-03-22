@@ -3,7 +3,7 @@ import { Upload, Lock, FolderTree, MessageSquareText, Share2 } from "lucide-reac
 const steps = [
   {
     title: "Upload",
-    description: "Upload your documents securely to DocCrypts",
+    description: "Upload your documents securely to Vaultify",
     icon: Upload,
   },
   {
@@ -39,7 +39,7 @@ export function HowItWorks() {
               <span className="text-gradient">Simple</span>, Secure Process
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              DocCrypts makes document management effortless with a streamlined workflow.
+              Vaultify makes document management effortless with a streamlined workflow.
             </p>
           </div>
         </div>

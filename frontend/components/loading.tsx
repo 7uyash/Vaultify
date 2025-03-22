@@ -22,7 +22,7 @@ export function Loading() {
               <div className="h-4 w-4 rounded-full bg-gradient-to-br from-sky-400 to-sky-600"></div>
             </div>
           </div>
-          <span className="font-bold text-xl">DocCrypts</span>
+          <span className="font-bold text-xl">Vaultify</span>
         </div>
 
         <div className="h-1 w-full bg-gray-100 rounded-full overflow-hidden">
