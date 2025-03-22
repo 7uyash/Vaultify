@@ -17,46 +17,44 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b"
+          ? "bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-sky-100"
           : "bg-transparent"
       }`}
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-blue-600 to-blue-800">
-            <div className="absolute inset-1 rounded-full bg-background flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-gradient-to-br from-green-400 to-green-600"></div>
+          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-sky-400 to-sky-600">
+            <div className="absolute inset-1 rounded-full bg-white flex items-center justify-center">
+              <div className="h-3 w-3 rounded-full bg-gradient-to-br from-sky-400 to-sky-600"></div>
             </div>
           </div>
-          <span className="font-bold text-xl">Vaultify</span>
+          <span className="font-bold text-xl">DocCrypts</span>
         </Link>
-        <nav className="hidden md:flex items-center justify-center flex-1 space-x-6 text-sm font-medium">
-          <Link href="#features" className="transition-colors hover:text-primary">
+        <nav className="hidden md:flex items-center justify-center flex-1 space-x-8 text-sm font-medium">
+          <Link href="#features" className="transition-colors hover:text-sky-600">
             Features
           </Link>
-          <Link href="#how-it-works" className="transition-colors hover:text-primary">
+          <Link href="#how-it-works" className="transition-colors hover:text-sky-600">
             How It Works
           </Link>
-          <Link href="#pricing" className="transition-colors hover:text-primary">
+          <Link href="#pricing" className="transition-colors hover:text-sky-600">
             Pricing
           </Link>
-          <Link href="#contact" className="transition-colors hover:text-primary">
+          <Link href="#contact" className="transition-colors hover:text-sky-600">
             Contact
           </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Button
             variant="ghost"
-            className="hidden md:flex"
+            className="hidden md:flex hover:bg-sky-50 hover:text-sky-600"
             onClick={() => document.getElementById("wallet-modal")?.classList.remove("hidden")}
           >
             Log In
           </Button>
-          <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700">
-            Join the Waitlist
-          </Button>
+          <Button className="bg-sky-500 hover:bg-sky-600 text-white">Join the Waitlist</Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -66,25 +64,30 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link href="#features" className="text-lg font-medium hover:text-primary">
+                <Link href="#features" className="text-lg font-medium hover:text-sky-600">
                   Features
                 </Link>
-                <Link href="#how-it-works" className="text-lg font-medium hover:text-primary">
+                <Link href="#how-it-works" className="text-lg font-medium hover:text-sky-600">
                   How It Works
                 </Link>
-                <Link href="#pricing" className="text-lg font-medium hover:text-primary">
+                <Link href="#pricing" className="text-lg font-medium hover:text-sky-600">
                   Pricing
                 </Link>
-                <Link href="#contact" className="text-lg font-medium hover:text-primary">
+                <Link href="#contact" className="text-lg font-medium hover:text-sky-600">
                   Contact
                 </Link>
                 <div className="flex flex-col gap-2 mt-4">
-                  <Button variant="outline" className="w-full">
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => {
+                      document.getElementById("wallet-modal")?.classList.remove("hidden")
+                      document.querySelector("[data-radix-sheet-content]")?.setAttribute("data-state", "closed")
+                    }}
+                  >
                     Log In
                   </Button>
-                  <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700">
-                    Join the Waitlist
-                  </Button>
+                  <Button className="w-full bg-sky-500 hover:bg-sky-600 text-white">Join the Waitlist</Button>
                 </div>
               </nav>
             </SheetContent>
@@ -102,12 +105,15 @@ export function Navbar() {
         }}
       >
         <div
-          className="bg-background border rounded-lg shadow-lg w-full max-w-md p-6 animate-in fade-in zoom-in duration-300"
+          className="bg-white border border-sky-100 rounded-2xl shadow-xl w-full max-w-md p-6 animate-in fade-in zoom-in duration-300"
           onClick={(e) => e.stopPropagation()}
         >
-          <h3 className="text-xl font-bold mb-4">Connect Your Wallet</h3>
-          <div className="space-y-4">
-            <Button variant="outline" className="w-full flex items-center justify-between">
+          <h3 className="text-xl font-bold mb-4 text-sky-900">Connect Your Wallet</h3>
+          <div className="space-y-3">
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-between h-14 border-sky-100 hover:border-sky-300 hover:bg-sky-50"
+            >
               <span>MetaMask</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -176,7 +182,10 @@ export function Navbar() {
                 />
               </svg>
             </Button>
-            <Button variant="outline" className="w-full flex items-center justify-between">
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-between h-14 border-sky-100 hover:border-sky-300 hover:bg-sky-50"
+            >
               <span>WalletConnect</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -185,7 +194,10 @@ export function Navbar() {
                 />
               </svg>
             </Button>
-            <Button variant="outline" className="w-full flex items-center justify-between">
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-between h-14 border-sky-100 hover:border-sky-300 hover:bg-sky-50"
+            >
               <span>Coinbase Wallet</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -200,7 +212,11 @@ export function Navbar() {
             </Button>
           </div>
           <div className="mt-6 flex justify-end">
-            <Button variant="ghost" onClick={() => document.getElementById("wallet-modal")?.classList.add("hidden")}>
+            <Button
+              variant="ghost"
+              className="hover:bg-sky-50 hover:text-sky-600"
+              onClick={() => document.getElementById("wallet-modal")?.classList.add("hidden")}
+            >
               Cancel
             </Button>
           </div>

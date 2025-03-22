@@ -1,4 +1,3 @@
-// Add loading state for page transitions
 "use client"
 
 import { Navbar } from "@/components/navbar"

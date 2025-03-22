@@ -4,46 +4,44 @@ import { ChevronRight } from "lucide-react"
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden">
-      {/* Background with blockchain nodes and AI circuits illustration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-950 to-slate-900">
-        <div className="absolute inset-0 opacity-20">
-          <svg className="h-full w-full" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
-              </pattern>
-              <radialGradient id="dotGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                <stop offset="0%" stopColor="rgba(74, 222, 128, 0.3)" />
-                <stop offset="100%" stopColor="rgba(74, 222, 128, 0)" />
-              </radialGradient>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-            {/* Blockchain nodes */}
-            <circle cx="200" cy="200" r="8" fill="url(#dotGradient)" />
-            <circle cx="400" cy="300" r="8" fill="url(#dotGradient)" />
-            <circle cx="600" cy="200" r="8" fill="url(#dotGradient)" />
-            <circle cx="300" cy="500" r="8" fill="url(#dotGradient)" />
-            <circle cx="500" cy="400" r="8" fill="url(#dotGradient)" />
-            <circle cx="700" cy="600" r="8" fill="url(#dotGradient)" />
-            {/* Connection lines */}
-            <line x1="200" y1="200" x2="400" y2="300" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-            <line x1="400" y1="300" x2="600" y2="200" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-            <line x1="400" y1="300" x2="300" y2="500" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-            <line x1="300" y1="500" x2="500" y2="400" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-            <line x1="500" y1="400" x2="700" y2="600" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-            <line x1="600" y1="200" x2="500" y2="400" stroke="rgba(74, 222, 128, 0.2)" strokeWidth="2" />
-          </svg>
+    <div className="relative overflow-hidden bg-gradient-to-b from-white to-sky-50">
+      {/* Spotlight effect */}
+      <div className="spotlight"></div>
+
+      {/* Floating elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-sky-200/30 rounded-full blur-3xl floating"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-sky-300/20 rounded-full blur-3xl floating-delay-2"></div>
+
+        {/* Document icons */}
+        <div className="absolute top-1/3 right-[15%] w-16 h-20 bg-white rounded-lg shadow-lg p-2 floating-delay-1">
+          <div className="w-full h-3 bg-sky-200 rounded mb-2"></div>
+          <div className="w-3/4 h-2 bg-sky-100 rounded mb-2"></div>
+          <div className="w-full h-2 bg-sky-100 rounded mb-2"></div>
+          <div className="w-2/3 h-2 bg-sky-100 rounded"></div>
         </div>
+
+        <div className="absolute bottom-1/3 left-[20%] w-14 h-18 bg-white rounded-lg shadow-lg p-2 floating-delay-3">
+          <div className="w-full h-3 bg-sky-200 rounded mb-2"></div>
+          <div className="w-full h-2 bg-sky-100 rounded mb-2"></div>
+          <div className="w-2/3 h-2 bg-sky-100 rounded"></div>
+        </div>
+
+        {/* Connection lines */}
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M20,30 Q50,20 80,40" stroke="rgba(14, 165, 233, 0.1)" strokeWidth="0.5" fill="none" />
+          <path d="M30,70 Q50,80 70,60" stroke="rgba(14, 165, 233, 0.1)" strokeWidth="0.5" fill="none" />
+          <path d="M10,50 Q50,40 90,50" stroke="rgba(14, 165, 233, 0.1)" strokeWidth="0.5" fill="none" />
+        </svg>
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Vaultify: Secure, Smart Document Management
+          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="text-gradient">DocCrypts:</span> Secure, Smart Document Management
           </h1>
           <p
-            className="mt-6 text-lg leading-8 text-gray-300 animate-in fade-in slide-in-from-bottom-4 duration-700"
+            className="mt-6 text-lg leading-8 text-gray-600 animate-in fade-in slide-in-from-bottom-4 duration-700"
             style={{ animationDelay: "100ms" }}
           >
             Leverage AI and blockchain for unparalleled document security and intelligence. Store, organize, and
@@ -53,13 +51,10 @@ export function Hero() {
             className="mt-10 flex items-center justify-center gap-x-6 animate-in fade-in slide-in-from-bottom-4 duration-700"
             style={{ animationDelay: "200ms" }}
           >
-            <Button
-              size="lg"
-              className="rounded-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-8"
-            >
-              Try Vaultify Free
+            <Button size="lg" className="rounded-full bg-sky-500 hover:bg-sky-600 text-white px-8">
+              Try DocCrypts Free
             </Button>
-            <Link href="#features" className="flex items-center text-sm font-semibold text-white">
+            <Link href="#features" className="flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700">
               Learn more <ChevronRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
