@@ -1,0 +1,26 @@
+{
+  "name": "vaultify-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "aptos": "^1.21.0",
+    "axios": "^1.8.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "googleapis": "^148.0.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "pdf-poppler": "^0.2.1",
+    "pdf2image": "^1.2.3",
+    "sqlite3": "^5.1.7",
+    "tesseract.js": "^6.0.0"
+  }
+}
