@@ -25,4 +25,4 @@ Vaultify is a next-generation document management solution designed to address c
 
 
 ## 📬 Contact
-For further inquiries and contributions, reach out via email or GitHub. ✉️
+For further inquiries and contributions, reach out via email or GitHub. ✉️ 
